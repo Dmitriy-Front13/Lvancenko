@@ -341,11 +341,11 @@
     <script>
         // JavaScript to move the div based on media query
         const contentDiv = document.querySelector('.content44');
-        const container1 = document.querySelector('#container-1');
-        const container2 = document.querySelector('#container-2');
+        const container1 = document.querySelector('#container1');
+        const container2 = document.querySelector('#container2');
 
         function moveDiv() {
-            if (window.innerWidth >= 390 && window.innerWidth <= 799) {
+            if (window.innerWidth >= 360 && window.innerWidth <= 799) {
                 container2.appendChild(contentDiv);
             } else {
                 container1.appendChild(contentDiv);
