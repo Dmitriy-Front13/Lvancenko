@@ -3,6 +3,16 @@ body {
     height: 100%;
 }
 
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
 body {
     background-color: #040404;
     font-family: "Wallpoet", sans-serif;
@@ -23,7 +33,7 @@ body {
     position: absolute;
     border: none;
     background: transparent;
-    right: -60px;
+    right: 0;
     top: 50%;
 
     .aj1 {
@@ -37,7 +47,7 @@ body {
     position: absolute;
     border: none;
     background: transparent;
-    left: -60px;
+    left: 0;
     top: 50%;
 
     .dzax1 {
@@ -55,9 +65,10 @@ body {
 
 
 .container {
-    max-width: 1460px;
+    width: auto;
     margin: auto;
     position: relative;
+    padding: 0 50px;
 }
 
 
@@ -130,6 +141,7 @@ body {
         background: #EB09FF85;
         box-shadow: 0px 0px 75.3px 7px #EB09FF;
         border: 1px solid #EB09FF;
+        cursor: pointer;
 
 
         p {
@@ -453,51 +465,52 @@ footer {
     text-transform: uppercase;
 }
 
-.form-div-ads {
-    display: grid;
-    justify-content: center;
+.form-ads {
+    margin: 87px 0 61px;
+    display: flex;
+    flex-direction: column;
+    gap: 61px;
 
-    .form-ads {
-        margin-top: 87px;
-        display: grid;
-        justify-content: center;
+    input[type=text],
+    select {
+        background: transparent;
+        width: 962px;
+        padding-bottom: 5px;
+        display: inline-block;
+        border-bottom: 1px solid #EB09FF;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        box-sizing: border-box;
+        height: 29px;
+        font-size: 24px;
+        font-family: "Wallpoet", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        color: #EB09FF;
 
-        input[type=text],
-        select {
-            background: transparent;
-            width: 962px;
-            padding: 12px 20px;
-            margin: 8px 0;
-            display: inline-block;
-            border-bottom: 1px solid #EB09FF;
-            border-top: none;
-            border-left: none;
-            border-right: none;
-            box-sizing: border-box;
-            margin-bottom: 61px;
-            height: 29px;
+        &:focus-visible {
+            outline: none;
+        }
+
+        &::placeholder {
             font-size: 24px;
             font-family: "Wallpoet", sans-serif;
             font-weight: 400;
             font-style: normal;
             color: #EB09FF;
+            text-transform: uppercase;
 
-            &:focus-visible {
-                outline: none;
-            }
-
-            &::placeholder {
-                font-size: 24px;
-                font-family: "Wallpoet", sans-serif;
-                font-weight: 400;
-                font-style: normal;
-                color: #EB09FF;
-                text-transform: uppercase;
-
-            }
         }
-
     }
+
+}
+
+.form-div-ads {
+    display: grid;
+    justify-content: center;
+
+
 
     .popovers-input {
         position: relative;
@@ -506,8 +519,7 @@ footer {
             margin-bottom: 21px;
             background: transparent;
             width: 962px;
-            padding: 12px 20px;
-            margin: 8px 0;
+            padding-bottom: 5px;
             display: inline-block;
             border-bottom: 1px solid #EB09FF;
             border-top: none;
@@ -546,6 +558,7 @@ footer {
             position: absolute;
             right: 0px;
             bottom: 10px;
+            cursor: pointer;
         }
 
         .popover {
@@ -698,160 +711,197 @@ footer {
     }
 }
 
-.loginDiv {
 
+
+.support {
+    padding-top: 87px;
+
+    &__form {
+        max-width: 960px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    &__box {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 60px;
+    }
+
+    &__input {
+        width: 100%;
+        background-color: transparent;
+        margin-bottom: 21px;
+        padding-bottom: 5px;
+        border-bottom: 1px solid #EB09FF;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        height: 30px;
+        font-size: 24px;
+        font-family: "Wallpoet", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        color: #EB09FF;
+        outline: none;
+
+        &::placeholder {
+            font-family: 'Wallpoet', sans-serif;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 24px;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: #EB09FF;
+        }
+    }
+
+    &__text {
+        margin: 60px 0 10px;
+        text-align: left;
+        font-family: 'Wallpoet', sans-serif;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 24px;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: #EB09FF;
+    }
+
+    &__textarea {
+        width: 100%;
+        height: 154px;
+        background-color: transparent;
+        border: 1px solid #EB09FF;
+        border-radius: 2px;
+        resize: none;
+    }
+
+    &__btn {
+        display: block;
+        margin: 55px auto 0;
+        width: 219px;
+        height: 55px;
+        background: rgba(235, 9, 255, 0.52);
+        border: 1px solid #EB09FF;
+        box-shadow: 0px 0px 75.3px 7px #EB09FF;
+        border-radius: 11px;
+        font-family: 'Wallpoet';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 32px;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        border: 1px solid #EB00FF;
+        color: rgba(0, 0, 0, 0.5);
+        text-shadow: 2px 0 #EB09FF, -2px 0 #EB09FF, 0 2px #EB09FF, 0 -2px #EB09FF, 1px 1px #EB09FF, -1px -1px #EB09FF, 1px -1px #EB09FF, -1px 1px #EB09FF;
+        cursor: pointer;
+    }
+}
+
+.modal-container {
+    display: none;
     box-shadow: 0px 0px 61.6px 22px #8102CF;
-
     max-width: 964px;
     width: 100%;
-    height: auto;
     border-radius: 11px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 64px;
-    margin-bottom: 114px;
-    justify-content: center;
-    padding: 29px 177px 29px 177px;
+    padding: 29px 23px;
     position: relative;
     border: 3px solid #EB09FF;
+    background: rgba(4, 4, 4, 1);
+}
 
-    .xx {
+.modal-content {
+    .closeModal-btn {
         position: absolute;
         top: 33px;
         right: 34px;
+        width: 32px;
+        height: 32px;
+        border: none;
+        background-color: transparent;
+        background-image: url('../img/closeModal.svg');
+        background-repeat: no-repeat;
+        cursor: pointer;
     }
 
-    .h2 {
+    &__title {
         text-transform: uppercase;
         color: #FFFFFF;
         font-size: 48px;
+        line-height: 48px;
+        font-weight: 400;
+        letter-spacing: 0.07em;
         text-align: center;
     }
+}
 
+.modal-form {
+    max-width: 611px;
+    width: 100%;
+    margin: 0 auto;
 
-    .form-login {
-        margin-top: 82px;
-        justify-content: center;
-        gap: 33px;
-        display: grid;
+    &__input {
+        background: transparent;
+        width: 100%;
+        padding-bottom: 10px;
+        display: inline-block;
+        border: none;
+        border-bottom: 1px solid #EB09FF;
+        height: 30px;
+        font-size: 24px;
+        font-family: "Wallpoet", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        color: #EB09FF85;
 
-
-
-        .inputQuestion {
-            border: 1px solid #EB09FF;
-            border-radius: 2px;
-            height: 154px;
+        &:focus-visible {
+            outline: none;
         }
 
-        input {
-            margin-bottom: 21px;
-            background: transparent;
-            width: 611px;
-            padding: 12px 20px;
-            margin: 8px 0;
-            display: inline-block;
-            border-bottom: 1px solid #EB09FF;
-            border-top: none;
-            border-left: none;
-            border-right: none;
-            box-sizing: border-box;
-
-            height: 30px;
+        &::placeholder {
             font-size: 24px;
             font-family: "Wallpoet", sans-serif;
             font-weight: 400;
             font-style: normal;
             color: #EB09FF85;
-
-            &:focus-visible {
-                outline: none;
-            }
-
-            &::placeholder {
-                font-size: 24px;
-                font-family: "Wallpoet", sans-serif;
-                font-weight: 400;
-                font-style: normal;
-                color: #EB09FF85;
-                text-transform: uppercase;
-
-            }
+            text-transform: uppercase;
         }
     }
 
+    &__label {
+        position: relative;
+        padding-left: 35px;
+        cursor: pointer;
+        user-select: none;
+    }
 
-    .checkbox-link {
-        margin-top: 38px;
-        display: flex;
-        gap: 107px;
+    &__input-checkbox {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+    }
 
+    &__checkbox {
+        position: absolute;
+        top: -1px;
+        left: 0;
+        height: 22px;
+        width: 22px;
+        background-color: transparent;
+        border: 2px solid #6D6D6D;
+        border-radius: 3px;
 
-        a {
-            text-decoration: none;
-            font-size: 20px;
-            color: #FFFFFF6B;
-            text-transform: uppercase;
-        }
-
-        .containerr {
-            display: block;
-            position: relative;
-            padding-left: 35px;
-            margin-bottom: 12px;
-            cursor: pointer;
-            font-size: 20px;
-            font-family: "Wallpoet", sans-serif;
-            font-weight: 400;
-            font-style: normal;
-            color: #FFFFFF6B;
-            -webkit-user-select: none;
-            -moz-user-select: none;
-            -ms-user-select: none;
-            user-select: none;
-            text-transform: uppercase;
-        }
-
-        /* Hide the browser's default checkbox */
-        .containerr input {
-            position: absolute;
-            opacity: 0;
-            cursor: pointer;
-            height: 0;
-            width: 0;
-        }
-
-        /* Create a custom checkbox */
-        .checkmark {
-            position: absolute;
-            top: 0;
-            left: 0;
-            height: 22px;
-            width: 22px;
-            background-color: transparent;
-            border: 2px solid #6D6D6D;
-        }
-
-        /* When the checkbox is checked, add a blue background */
-        .containerr input:checked~.checkmark {
-            background-color: transparent;
-        }
-
-        /* Create the checkmark/indicator (hidden when not checked) */
-        .checkmark:after {
-            content: "";
+        &::after {
+            content: '';
             position: absolute;
             display: none;
-        }
-
-        /* Show the checkmark when checked */
-        .containerr input:checked~.checkmark:after {
-            display: block;
-        }
-
-        /* Style the checkmark/indicator */
-        .containerr .checkmark:after {
-            left: 5px;
-            top: 1px;
+            left: 7.5px;
+            top: 3px;
             width: 5px;
             height: 10px;
             border: solid white;
@@ -862,41 +912,138 @@ footer {
         }
     }
 
+    .modal-form__input-checkbox:checked+.modal-form__checkbox {
+        background-color: transparent;
 
-    .reg-log {
-        margin-top: 40px;
-        justify-content: center;
-        color: #3E3A3F;
-        font-size: 15px;
-        display: flex;
-        gap: 2px;
-
-
-        text-transform: uppercase;
-
-        a {
-            color: #3E3A3F;
-            text-decoration: none;
-        }
-
-        .active {
-            color: #EB09FF;
+        &::after {
+            display: block;
         }
     }
 
-    .textForget {
-        margin-top: 25px;
+    &__btn {
+        text-transform: uppercase;
+        margin: 43px auto 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 219px;
+        height: 55px;
+        color: white;
+        cursor: pointer;
+        box-shadow: 0px 0px 75.3px 7px #EB09FF;
+        background: rgba(235, 9, 255, 0.5215686275);
+        border: 1px solid #EB09FF;
+        border-radius: 4px;
+        color: rgba(0, 0, 0, 0.5);
+        text-shadow: 2px 0 #EB09FF, -2px 0 #EB09FF, 0 2px #EB09FF, 0 -2px #EB09FF, 1px 1px #EB09FF, -1px -1px #EB09FF, 1px -1px #EB09FF, -1px 1px #EB09FF;
+        font-size: 32px;
+        font-family: "Wallpoet", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        text-transform: uppercase;
+    }
+}
+
+
+.form-login {
+    padding-top: 89px;
+
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        gap: 33px;
+    }
+
+    &__box {
+        margin: 38px 0 40px;
+        display: flex;
+        justify-content: space-between;
+        letter-spacing: 0.04em;
         font-size: 20px;
         color: #FFFFFF6B;
         text-transform: uppercase;
-        max-width: 611px;
-        margin-left: auto;
-        margin-right: auto;
+        a {
+            cursor: pointer;
+        }
+    }
+
+}
+
+
+.form-reg {
+    padding-top: 50px;
+
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    &__box {
+        margin: 20px 0 32px;
+        font-size: 20px;
+        color: #FFFFFF6B;
+        text-transform: uppercase;
+        letter-spacing: 0.04em;
+    }
+}
+
+.reg-log {
+    justify-content: center;
+    color: #3E3A3F;
+    font-size: 15px;
+    display: flex;
+    gap: 2px;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+
+    a {
+        cursor: pointer;
+        color: #3E3A3F;
+        border: none;
+    }
+
+    .active {
+        color: #EB09FF;
+    }
+}
+
+
+.form-forgotPass {
+    margin-top: 43px;
+    &__text {
+            margin: 25px auto 0;
+            font-size: 20px;
+            color: #FFFFFF6B;
+            text-transform: uppercase;
+            max-width: 611px;
+    }
+}
+
+.fancybox__backdrop {
+    background: rgba(34, 34, 34, 0.82);
+}
+
+
+.modal-content--support {
+    display: none;
+    background: #000000;
+    padding: 97px 72px 50px 72px;
+    box-shadow: 0px 0px 35.9px 16px #EB09FF85;
+    width: 75%;
+    border-radius: 11px;
+
+    p {
+        font-size: 48px;
+        line-height: 48.1px;
+        text-align: center;
+        color: #EB09FF;
+        text-transform: uppercase;
     }
 
     button {
         text-transform: uppercase;
-        margin-top: 113px;
+        margin-top: 71px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -921,118 +1068,23 @@ footer {
         margin-left: auto;
         margin-right: auto;
     }
-
-
-    .btnForget {
-        margin-top: 56px;
-    }
-
-    .btn-reg {
-        margin-top: 43px;
-    }
 }
 
-.support {
-    margin-top: 0px;
-
-
-    label {
-        color: #EB09FF85;
-        font-size: 24px;
-        text-transform: uppercase;
-
-    }
-
-
-    .supportBtn {
-        margin-top: 55px;
-    }
-
-
-    /* Основные стили для модального окна */
-    .modal {
-        display: none;
-        /* Скрыто по умолчанию */
-        position: fixed;
-        /* Оставаться на месте */
-        z-index: 1;
-        /* На переднем плане */
-        left: 0;
-        top: 0;
-        width: 100%;
-        /* Полная ширина */
-        height: 100%;
-        /* Полная высота */
-        overflow: auto;
-        /* Включить прокрутку при необходимости */
-        background-color: #222222D1;
-        /* Черный цвет с прозрачностью */
-    }
-
-    /* Стили для содержания модального окна */
-    .modal-content {
-        background: #000000;
-        margin: 15% auto;
-        /* 15% от верхнего и авто по горизонтали */
-        padding: 97px 72px 50px 72px;
-        box-shadow: 0px 0px 35.9px 16px #EB09FF85;
-        width: 75%;
-        /* Ширина модального окна */
-        border-radius: 11px;
-
-        p {
-            font-size: 48px;
-            line-height: 48.1px;
-            text-align: center;
-            color: #EB09FF;
-            text-transform: uppercase;
-        }
-
-        button {
-            text-transform: uppercase;
-            margin-top: 71px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-decoration: none;
-            width: 219px;
-            height: 55px;
-            color: white;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            box-shadow: 0px 0px 75.3px 7px #EB09FF;
-            background: rgba(235, 9, 255, 0.5215686275);
-            border: 1px solid #EB09FF;
-            color: #000;
-            color: rgba(0, 0, 0, 0.5);
-            text-shadow: 2px 0 #EB09FF, -2px 0 #EB09FF, 0 2px #EB09FF, 0 -2px #EB09FF, 1px 1px #EB09FF, -1px -1px #EB09FF, 1px -1px #EB09FF, -1px 1px #EB09FF;
-            font-size: 20px;
-            font-family: "Wallpoet", sans-serif;
-            font-weight: 400;
-            font-style: normal;
-            text-transform: uppercase;
-            margin-left: auto;
-            margin-right: auto;
-        }
-    }
-
-    /* Стили для кнопки закрытия */
-    .close {
-        color: #aaa;
-        float: right;
-        font-size: 28px;
-        font-weight: bold;
-    }
-
-    .close:hover,
-    .close:focus {
-        color: black;
-        text-decoration: none;
-        cursor: pointer;
-    }
-
+/* Стили для кнопки закрытия */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
 }
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
 
 .instructionMailDiv {
     margin-top: 116px;
@@ -1359,18 +1411,7 @@ footer {
 }
 
 
-@media (min-width:1000px) and (max-width:1460px) {
-
-    .container {
-        max-width: 1000px;
-        margin: auto;
-        position: relative;
-    }
-
-
-}
-
-@media (min-width:800px) and (max-width:999px) {
+@media (min-width:800px) and (max-width:1180px) {
 
     .container {
         max-width: 780px;
@@ -1379,7 +1420,7 @@ footer {
     }
 
     .menu {
-    
+
 
         &__inner {
             flex-wrap: wrap;
@@ -1709,6 +1750,7 @@ footer {
         max-width: 350px;
         margin: 0 auto;
         position: relative;
+        padding: 0;
     }
 
     .container1 {
@@ -2244,20 +2286,6 @@ footer {
         }
     }
 
-    .support {
-        margin-top: 44px;
-
-        label {
-            color: rgba(235, 9, 255, 0.5215686275);
-            font-size: 20px;
-            text-transform: uppercase;
-        }
-
-        .supportBtn {
-            margin-top: 23px;
-        }
-    }
-
     .gameclose .winner-loser {
         width: 800px;
 
@@ -2268,7 +2296,7 @@ footer {
     }
 
 
-    
+
 
     .rules {
         a {
@@ -2336,6 +2364,10 @@ footer {
 
     footer {
         align-items: center;
+
+        .inter {
+            align-items: center;
+        }
 
         .links {
             display: grid;
