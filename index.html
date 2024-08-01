@@ -30,7 +30,7 @@
                     </svg>
                     logo and get $1,000
                 </p>
-                <button data-fancybox data-src="#modal">
+                <button data-fancybox data-src="#modal-login">
                     <p>Play</p>
                 </button>
             </div>
@@ -243,7 +243,7 @@
         </div>
     </footer>
 
-    <div class="modal-container" id="modal">
+    
         <div class="modal-content" id="modal-login">
             <button class="closeModal-btn"></button>
             <h2 class="modal-content__title">Login</h2>
@@ -258,10 +258,10 @@
                         <input class="modal-form__input-checkbox" type="checkbox">
                         <span class="modal-form__checkbox"></span>
                     </label>
-                    <a id="link-pass">forgot password?</a>
+                    <a id="link-pass" data-fancybox data-src="#modal-forgotPass">forgot password?</a>
                 </div>
                 <div class="reg-log">
-                    <a class="reg-link">Registration</a> / <a class="active">Login</a>
+                    <a class="reg-link" data-fancybox data-src="#modal-reg">Registration</a> / <a class="active">Login</a>
                 </div>
                 <button class="modal-form__btn">GO</button>
             </form>
@@ -287,7 +287,7 @@
                     </label>
                 </div>
                 <div class="reg-log">
-                    <a class="active">Registration</a> / <a class="login-link">Login</a>
+                    <a class="active">Registration</a> / <a class="login-link" data-fancybox data-src="#modal-login">Login</a>
                 </div>
                 <button class="modal-form__btn">GO</button>
             </form>
@@ -301,16 +301,15 @@
                 <button class="modal-form__btn">Send</button>
             </form>
         </div>  
-    </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
-    <script src="js/tabs.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>1
     <script>
         Fancybox.bind("[data-fancybox]", {
             closeButton: false,
             dragToClose: false,
+            closeExisting: true,
             on: {
                 done: (fancybox) => {
                     // Добавляем обработчик для нашей кнопки закрытия
