@@ -1,0 +1,79 @@
+%input {
+  background: transparent;
+  width: 100%;
+  padding-bottom: 5px;
+  display: inline-block;
+  border: none;
+  border-bottom: 1px solid #EB09FF;
+  height: 29px;
+  font-size: 24px;
+  font-family: "Wallpoet", sans-serif;
+  font-weight: 400;
+  color: #EB09FF;
+  letter-spacing: 0.12em;
+
+  &:focus-visible {
+    outline: none;
+  }
+
+  &::placeholder {
+    font-size: 24px;
+    font-family: "Wallpoet", sans-serif;
+    font-weight: 400;
+    color: #EB09FF;
+    text-transform: uppercase;
+  }
+}
+
+%input-modal {
+  background: transparent;
+  width: 100%;
+  padding-bottom: 10px;
+  display: inline-block;
+  border: none;
+  border-bottom: 1px solid #EB09FF;
+  height: 30px;
+  font-size: 24px;
+  font-family: "Wallpoet", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #EB09FF85;
+  letter-spacing: 0.04em;
+
+  &:focus-visible {
+    outline: none;
+  }
+
+  &::placeholder {
+    font-size: 24px;
+    font-family: "Wallpoet", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #EB09FF85;
+    text-transform: uppercase;
+  }
+}
+
+%btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 219px;
+  height: 55px;
+  background: rgba(235, 9, 255, 0.52);
+  box-shadow: 0px 0px 75.3px 7px #EB09FF;
+  border-radius: 11px;
+  font-family: 'Wallpoet';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 32px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  border: 1px solid #EB00FF;
+  color: rgba(0, 0, 0, 0.5);
+  text-shadow: 2px 0 #EB09FF, -2px 0 #EB09FF, 0 2px #EB09FF, 0 -2px #EB09FF, 1px 1px #EB09FF, -1px -1px #EB09FF, 1px -1px #EB09FF, -1px 1px #EB09FF;
+  cursor: pointer;
+}
+
