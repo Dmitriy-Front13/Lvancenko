@@ -1,4 +1,15 @@
-
+@media (max-width:1280px) {
+    .menu {
+        .h11 {
+            gap: 10px;
+            font-size: 28px;
+            svg {
+                width: 40px;
+                height: 40px;
+            }
+        }
+    }
+}
 
 
 @media(min-width: 800px)and (max-width: 1180px) {
@@ -18,16 +29,8 @@
     }
 
     .menu .h11 {
-        gap: 22px;
-        display: flex;
-        align-items: center;
-        font-size: 32px;
-        color: #040404;
-        text-shadow: 2px 0 #eb09ff, -2px 0 #eb09ff, 0 2px #eb09ff, 0 -2px #eb09ff, 1px 1px #eb09ff, -1px -1px #eb09ff, 1px -1px #eb09ff, -1px 1px #eb09ff;
         order: 3;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 30px
+        margin: 30px auto 0;
     }
 
     .menu .h11-rules {
