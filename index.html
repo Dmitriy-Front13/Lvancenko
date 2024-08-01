@@ -388,6 +388,12 @@
 
             const selectedCell = document.querySelector(`[data-cell-number="${cellNumber}"]`);
 
+            if (selectedCell.classList.contains('clicked')) {
+                return; 
+            }
+
+            selectedCell.classList.add('clicked');
+
             if (cellNumber === winningCell) {
                 selectedCell.innerHTML = '<i class="fab fa-apple"></i>';
                 selectedCell.classList.add('special-class-653');
