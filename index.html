@@ -16,6 +16,7 @@
 </head>
 
 <body>
+    
     <header class="menu">
         <div class="container">
             <div class="menu__inner">
@@ -36,20 +37,14 @@
             </div>
         </div>
     </header>
-
-
-
+<main class="main">
     <section class="body">
         <div class="container container1">
             <div class="search-div" id="container1">
 
                 <div class="search" id="element1">
-                    <input type="text" name="" id="" placeholder="search by number">
-                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M27.0611 24.9386L21.1248 18.9998C22.9047 16.6804 23.7357 13.7708 23.4492 10.8613C23.1627 7.95169 21.7802 5.26004 19.5821 3.33231C17.3841 1.40459 14.535 0.385145 11.613 0.480777C8.69089 0.57641 5.9146 1.77996 3.84728 3.84728C1.77996 5.9146 0.57641 8.69089 0.480777 11.613C0.385145 14.535 1.40459 17.3841 3.33231 19.5821C5.26004 21.7802 7.95169 23.1627 10.8613 23.4492C13.7708 23.7357 16.6804 22.9047 18.9998 21.1248L24.9411 27.0673C25.0806 27.2069 25.2463 27.3175 25.4286 27.3931C25.6109 27.4686 25.8063 27.5074 26.0036 27.5074C26.2009 27.5074 26.3963 27.4686 26.5786 27.3931C26.7609 27.3175 26.9265 27.2069 27.0661 27.0673C27.2056 26.9278 27.3163 26.7622 27.3918 26.5798C27.4673 26.3975 27.5062 26.2022 27.5062 26.0048C27.5062 25.8075 27.4673 25.6121 27.3918 25.4298C27.3163 25.2475 27.2056 25.0819 27.0661 24.9423L27.0611 24.9386ZM3.49983 11.9998C3.49983 10.3187 3.99835 8.6753 4.93234 7.27748C5.86633 5.87966 7.19385 4.7902 8.74702 4.14685C10.3002 3.50351 12.0093 3.33518 13.6581 3.66315C15.3069 3.99113 16.8215 4.80067 18.0102 5.98942C19.199 7.17817 20.0085 8.69272 20.3365 10.3416C20.6645 11.9904 20.4961 13.6995 19.8528 15.2526C19.2095 16.8058 18.12 18.1333 16.7222 19.0673C15.3244 20.0013 13.681 20.4998 11.9998 20.4998C9.7462 20.4975 7.58554 19.6012 5.99198 18.0077C4.39842 16.4141 3.50215 14.2535 3.49983 11.9998Z"
-                            fill="#EB09FF" />
-                    </svg>
+                    <input class="search__input" type="text" name="" id="" placeholder="search by number">
+                    <button class="search__btn"></button>
                 </div>
             </div>
         </div>
@@ -60,8 +55,8 @@
                 <div class="div1">
                     <p class="h3">Your attempts:</p>
                     <div class="ott">
-                        <button class="one no">1</button>
-                        <button class="two yes">2</button>
+                        <button class="one">1</button>
+                        <button class="two">2</button>
                         <button class="three">3</button>
                     </div>
                 </div>
@@ -175,7 +170,7 @@
 
         </div>
     </section>
-
+</main>
     <footer>
         <div class="container">
             <div class="footer__inner">
@@ -243,64 +238,69 @@
         </div>
     </footer>
 
-    
-        <div class="modal-content" id="modal-login">
-            <button class="closeModal-btn"></button>
-            <h2 class="modal-content__title">Login</h2>
-            <form class="modal-form form-login">
-                <div class="form-login__inner">
-                    <input class="modal-form__input" type="text" id="input1" placeholder="User name">
-                    <input class="modal-form__input" type="text" id="input2" placeholder="Password">
-                </div>
-                <div class="form-login__box">
-                    <label class="modal-form__label">
-                        remember me?
-                        <input class="modal-form__input-checkbox" type="checkbox">
-                        <span class="modal-form__checkbox"></span>
-                    </label>
-                    <a id="link-pass" data-fancybox data-src="#modal-forgotPass">forgot password?</a>
-                </div>
-                <div class="reg-log">
-                    <a class="reg-link" data-fancybox data-src="#modal-reg">Registration</a> / <a class="active">Login</a>
-                </div>
-                <button class="modal-form__btn">GO</button>
-            </form>
-        </div>
-        <div class="modal-content" id="modal-reg">
-            <button class="closeModal-btn">
-            </button>
-            <h2 class="modal-content__title">Registration</h2>
-            <form class="modal-form form-reg">
-                <div class="form-reg__inner">
-                    <input class="modal-form__input" type="text" id="input1" placeholder="Your first name">
-                    <input class="modal-form__input" type="text" id="input2" placeholder="last name">
-                    <input class="modal-form__input" type="text" id="input3" placeholder="phone">
-                    <input class="modal-form__input" type="text" id="input4" placeholder="Your mail">
-                    <input class="modal-form__input" type="text" id="input5" placeholder="Password">
-                    <input class="modal-form__input" type="text" id="input6" placeholder="repeat password">
-                </div>
-                <div class="form-reg__box">
-                    <label class="modal-form__label">
-                        i agree ti data processing
-                        <input class="modal-form__input-checkbox" type="checkbox">
-                        <span class="modal-form__checkbox"></span>
-                    </label>
-                </div>
-                <div class="reg-log">
-                    <a class="active">Registration</a> / <a class="login-link" data-fancybox data-src="#modal-login">Login</a>
-                </div>
-                <button class="modal-form__btn">GO</button>
-            </form>
-        </div>
-        <div class="modal-content" id="modal-forgotPass">
-            <button class="closeModal-btn"></button>
-            <h2 class="modal-content__title">Password <br> recovery</h2>
-            <form class="modal-form form-forgotPass">
-                <input class="modal-form__input" type="email" id="input1" placeholder="Your mail">
-                <p class="form-forgotPass__text">We will send further instructions to your email to reset your password.</p>
-                <button class="modal-form__btn">Send</button>
-            </form>
-        </div>  
+
+    <div class="modal-content" id="modal-login">
+        <button class="closeModal-btn"></button>
+        <h2 class="modal-content__title">Login</h2>
+        <form class="modal-form form-login">
+            <div class="form-login__inner">
+                <input class="modal-form__input" type="text" id="input1" placeholder="User name">
+                <input class="modal-form__input" type="text" id="input2" placeholder="Password">
+            </div>
+            <div class="form-login__box">
+                <label class="modal-form__label">
+                    remember me?
+                    <input class="modal-form__input-checkbox" type="checkbox">
+                    <span class="modal-form__checkbox"></span>
+                </label>
+                <a id="link-pass" data-fancybox data-src="#modal-forgotPass">forgot password?</a>
+            </div>
+            <div class="reg-log">
+                <a class="reg-link" data-fancybox data-src="#modal-reg">Registration</a> / <a class="active">Login</a>
+            </div>
+            <button class="modal-form__btn">GO</button>
+        </form>
+    </div>
+    <div class="modal-content" id="modal-reg">
+        <button class="closeModal-btn">
+        </button>
+        <h2 class="modal-content__title">Registration</h2>
+        <form class="modal-form form-reg">
+            <div class="form-reg__inner">
+                <input class="modal-form__input" type="text" id="input1" placeholder="Your first name">
+                <input class="modal-form__input" type="text" id="input2" placeholder="last name">
+                <input class="modal-form__input" type="text" id="input3" placeholder="phone">
+                <input class="modal-form__input" type="text" id="input4" placeholder="Your mail">
+                <input class="modal-form__input" type="text" id="input5" placeholder="Password">
+                <input class="modal-form__input" type="text" id="input6" placeholder="repeat password">
+            </div>
+            <div class="form-reg__box">
+                <label class="modal-form__label">
+                    i agree ti data processing
+                    <input class="modal-form__input-checkbox" type="checkbox">
+                    <span class="modal-form__checkbox"></span>
+                </label>
+            </div>
+            <div class="reg-log">
+                <a class="active">Registration</a> / <a class="login-link" data-fancybox
+                    data-src="#modal-login">Login</a>
+            </div>
+            <button class="modal-form__btn">GO</button>
+        </form>
+    </div>
+    <div class="modal-content" id="modal-forgotPass">
+        <button class="closeModal-btn"></button>
+        <h2 class="modal-content__title">Password <br> recovery</h2>
+        <form class="modal-form form-forgotPass">
+            <input class="modal-form__input" type="email" id="input1" placeholder="Your mail">
+            <p class="form-forgotPass__text">We will send further instructions to your email to reset your password.</p>
+            <button class="modal-form__btn" data-fancybox data-src="#modal-mail">Send</button>
+        </form>
+    </div>
+    <div class="modal-home" id="modal-mail">
+        <p>Check your mail</p>
+        <a href="./index.html">to Home Page</a>
+    </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
@@ -342,46 +342,101 @@
     </script>
 
     <script>
-        // Получаем контейнер, в который будем добавлять новые div
-        const container = document.getElementById('container');
+        let attempts = 3;
+        const container = document.querySelector('.numper-div');
+        const attemptButtons = document.querySelectorAll('.ott button');
+        const searchInput = document.querySelector('.search__input');
+        const searchButton = document.querySelector('.search__btn');
+        let winningCell;
+        let numCells;
 
-        // Создаем 1000 div и добавляем их в контейнер
-        for (let i = 1; i <= 1000; i++) {
-            const newDiv = document.createElement('div');
-
-            if (window.matchMedia('(min-width: 360px) and (max-width: 799px)').matches) {
-                divCount = 100; // Ограничиваем количество div до 100
-            }
-
-            // Присваиваем классы 653 и 326 элементам
-            if (i === 13) {
-                newDiv.classList.add('special-class-653');
-                newDiv.innerHTML = '<i class="fab fa-apple"></i>'; // Иконка iPhone
-            } else if (i === 44) {
-                newDiv.classList.add('special-class-326');
+        function createCells(num) {
+            container.querySelectorAll('.cell').forEach(cell => cell.remove());
+            for (let i = 1; i <= num; i++) {
+                const newDiv = document.createElement('div');
                 newDiv.textContent = i;
-            } else if (i >= 101 && i <= 1000) { // Присваиваем один класс от 101 до 1000
-                newDiv.classList.add('common-class');
-                newDiv.textContent = i;
-            } else {
-                newDiv.textContent = i;
-            }
+                newDiv.dataset.cellNumber = i;
+                newDiv.classList.add('cell');
+                newDiv.addEventListener('click', () => checkCell(i));
 
-            // Устанавливаем размер шрифта в зависимости от номера элемента
-            if (i >= 200 && i <= 999) {
-                newDiv.style.fontSize = '12px';
-            } else {
-                newDiv.style.fontSize = '14px';
-            }
+                if (i >= 200 && i <= 999) {
+                    newDiv.style.fontSize = '12px';
+                } else {
+                    newDiv.style.fontSize = '14px';
+                }
 
-            container.appendChild(newDiv);
+                container.appendChild(newDiv);
+            }
         }
 
-        // Меняем текст последнего div на "K1"
-        container.lastChild.textContent = 'K1';
+        function initializeGame() {
+            // Определение количества клеток в зависимости от ширины экрана
+            if (window.matchMedia('(min-width: 360px) and (max-width: 799px)').matches) {
+                numCells = 100;
+            } else {
+                numCells = 1000;
+            }
+
+            winningCell = Math.floor(Math.random() * numCells) + 1; 
+            createCells(numCells); 
+        }
+
+        function checkCell(cellNumber) {
+            if (attempts <= 0) return;
+
+            const selectedCell = document.querySelector(`[data-cell-number="${cellNumber}"]`);
+
+            if (cellNumber === winningCell) {
+                selectedCell.innerHTML = '<i class="fab fa-apple"></i>';
+                selectedCell.classList.add('special-class-653');
+                container.querySelectorAll('div').forEach(cell => cell.removeEventListener('click', () => { }));
+                markAttemptButton(true);
+            } else {
+                selectedCell.classList.add('special-class-326');
+                markAttemptButton(false);
+            }
+
+            attempts--;
+
+            if (attempts <= 0 && cellNumber !== winningCell) {
+                alert(`Вы проиграли! Выигрышная клетка была: ${winningCell}`);
+            }
+        }
+
+        function markAttemptButton(success) {
+            const buttonIndex = 3 - attempts; 
+            const button = attemptButtons[buttonIndex];
+
+            if (button) { 
+                if (success) {
+                    button.classList.add('yes');
+                } else {
+                    button.classList.add('no');
+                }
+            }
+        }
+
+        function simulateCellClick(cellNumber) {
+            const cellToClick = document.querySelector(`[data-cell-number="${cellNumber}"]`);
+            if (cellToClick) {
+                cellToClick.click(); 
+            }
+        }
+
+        searchButton.addEventListener('click', () => {
+            const searchValue = parseInt(searchInput.value, 10);
+            if (!isNaN(searchValue) && searchValue >= 1 && searchValue <= numCells) {
+                simulateCellClick(searchValue);
+            } else {
+                alert('Введите корректный номер клетки.');
+            }
+        });
+        initializeGame();
+        window.addEventListener('resize', () => {
+            initializeGame();
+        });
+
     </script>
-
-
     <script>
         function moveElements() {
             const width = window.innerWidth;
@@ -391,31 +446,23 @@
             const container2 = document.getElementById('container2');
 
             if (width >= 360 && width <= 799) {
-                if (container1.contains(element1)) {
-                    container2.appendChild(element1);
-                }
-                if (container2.contains(element2)) {
-                    container1.appendChild(element2);
-                }
+                if (container1.contains(element1)) { container2.appendChild(element1); } if
+                    (container2.contains(element2)) { container1.appendChild(element2); }
             } else {
-                if (container2.contains(element1)) {
-                    container1.appendChild(element1);
-                }
-                if (container1.contains(element2)) {
-                    container2.appendChild(element2);
-                }
+                if
+                    (container2.contains(element1)) { container1.appendChild(element1); } if (container1.contains(element2)) {
+                        container2.appendChild(element2);
+                    }
             }
         }
-
-        // Initial check
-        moveElements();
-
-        // Add event listener for window resize
         window.addEventListener('resize', moveElements);
-
+        document.addEventListener('DOMContentLoaded', () => {
+            moveElements();
+        }); 
     </script>
 
-
+   
+    
 
     <!-- <script>
         // JavaScript to move the div based on media query

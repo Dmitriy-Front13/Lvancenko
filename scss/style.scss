@@ -16,6 +16,10 @@ h6 {
     margin: 0;
 }
 
+.main {
+    flex-grow: 1;
+  }
+
 body {
     background-color: #040404;
     font-family: "Wallpoet", sans-serif;
@@ -106,11 +110,13 @@ body {
     }
 
     .h11 {
+        text-transform: uppercase;
         gap: 22px;
         display: flex;
         align-items: center;
         font-size: 32px;
         color: #040404;
+        letter-spacing: 0.04em;
         text-shadow: 2px 0 #EB09FF, -2px 0 #EB09FF, 0 2px #EB09FF, 0 -2px #EB09FF,
             1px 1px #EB09FF, -1px -1px #EB09FF, 1px -1px #EB09FF, -1px 1px #EB09FF;
     }
@@ -162,61 +168,73 @@ body {
 
 }
 
+.special-class-653 {
+    background: #09FF22 !important;
+}
 
+.special-class-326 {
+    background: #FF543E !important;
+    color: #000 !important;
+}
+
+.no {
+    background: #FF543E !important;
+    border: none !important;
+}
+
+
+
+.yes {
+    background: #09FF22 !important;
+
+    border: none !important;
+}
+
+
+.search {
+    position: relative;
+    width: 100%;
+
+    &__input {
+        padding-left: 47px;
+        width: 100%;
+        height: 89px;
+        border-radius: 20px;
+        font-size: 24px;
+        font-family: "Wallpoet", sans-serif;
+        font-weight: 400;
+        border: 2px solid #EB09FF;
+        background: transparent;
+        color: #FFFFFF;
+
+        &::placeholder {
+            text-transform: uppercase;
+            color: #FFFFFF;
+            font-size: 24px;
+            font-family: "Wallpoet", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+
+        }
+    }
+
+    &__btn {
+        position: absolute;
+        top: 31.47px;
+        right: 49.49px;
+        background-image: url('../img/search-btn.svg');
+        width: 28px;
+        height: 28px;
+        background-color: transparent;
+        background-repeat: no-repeat;
+        border: none;
+        cursor: pointer;
+    }
+}
 
 .body {
     padding-top: 48px;
 
-    .no {
-        background: #FF543E !important;
-        border: none !important;
-    }
-
-    .special-class-653 {
-        background: #09FF22 !important;
-
-    }
-
-    .special-class-326 {
-        background: #FF543E !important;
-        color: #000 !important;
-    }
-
-    .yes {
-        background: #09FF22 !important;
-
-        border: none !important;
-    }
-
-    .search {
-        position: relative;
-        width: 100%;
-
-        input {
-            padding-left: 47px;
-            width: 100%;
-            height: 89px;
-            border-radius: 20px;
-            border: 2px solid #EB09FF;
-            background: transparent;
-            color: #FFFFFF;
-
-            &::placeholder {
-                text-transform: uppercase;
-                color: #FFFFFF;
-                font-size: 24px;
-                font-family: "Wallpoet", sans-serif;
-                font-weight: 400;
-                font-style: normal;
-            }
-        }
-
-        svg {
-            position: absolute;
-            top: 31.47px;
-            right: 49.49px;
-        }
-    }
 
 
     .slider {
@@ -629,8 +647,8 @@ footer {
     }
 
     &__btn {
-       @extend %btn;
-       margin-top: 55px;
+        @extend %btn;
+        margin-top: 55px;
     }
 }
 
@@ -645,6 +663,7 @@ footer {
     position: relative;
     border: 3px solid #EB09FF;
     background: rgba(4, 4, 4, 1);
+
     .closeModal-btn {
         position: absolute;
         top: 33px;
@@ -675,7 +694,7 @@ footer {
     margin: 0 auto;
 
     &__input {
-       @extend %input-modal;
+        @extend %input-modal;
     }
 
     &__label {
