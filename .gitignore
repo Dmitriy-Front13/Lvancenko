@@ -1,10 +1,11 @@
-js/tabs.js
+
 node_modules
 gulpfile.js
 package-lock.json
 package.json
-scss
+
 LC_Lvancenko.rar
-js
 
 
+
+tore --source=9b6d1d9 --staged --worktree .
