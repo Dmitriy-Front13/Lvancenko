@@ -27,12 +27,17 @@ body {
 
 .wrapper-about {
     width: 100%;
-    background-image: url('img/aboutimg.png');
+    background-image: url('../img/aboutimg.png');
     background-repeat: no-repeat;
     background-position: right;
     background-size: contain;
 }
 
+.wrapper-rules {
+    background-image: url('../img/rulespng.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 .special-class-653 {
     background: #09FF22 !important;

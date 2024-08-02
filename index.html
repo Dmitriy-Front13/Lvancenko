@@ -23,7 +23,7 @@
                 </a>
                 <h3 class="header__title">Find the <img class="header__title-img" src="img/title-img.svg" alt="">logo
                     and get $1,000</h3>
-                <button class="header__btn">Play</button>
+                <button class="header__btn" data-fancybox data-src="#modal-login">Play</button>
             </div>
         </div>
     </header>
@@ -223,9 +223,91 @@
         </div>
     </footer>
 
+    <div class="modal-content" id="modal-login">
+        <button class="closeModal-btn"></button>
+        <h2 class="modal-content__title">Login</h2>
+        <form class="modal-form form-login">
+            <div class="form-login__inner">
+                <input class="modal-form__input" type="text" id="input1" placeholder="User name">
+                <input class="modal-form__input" type="text" id="input2" placeholder="Password">
+            </div>
+            <div class="form-login__box">
+                <label class="modal-form__label">
+                    remember me?
+                    <input class="modal-form__input-checkbox" type="checkbox">
+                    <span class="modal-form__checkbox"></span>
+                </label>
+                <a id="link-pass" data-fancybox data-src="#modal-forgotPass">forgot password?</a>
+            </div>
+            <div class="reg-log">
+                <a class="reg-link" data-fancybox data-src="#modal-reg">Registration</a> / <a class="active">Login</a>
+            </div>
+            <button class="modal-form__btn">GO</button>
+        </form>
+    </div>
+    <div class="modal-content" id="modal-reg">
+        <button class="closeModal-btn">
+        </button>
+        <h2 class="modal-content__title">Registration</h2>
+        <form class="modal-form form-reg">
+            <div class="form-reg__inner">
+                <input class="modal-form__input" type="text" id="input1" placeholder="Your first name">
+                <input class="modal-form__input" type="text" id="input2" placeholder="last name">
+                <input class="modal-form__input" type="text" id="input3" placeholder="phone">
+                <input class="modal-form__input" type="text" id="input4" placeholder="Your mail">
+                <input class="modal-form__input" type="text" id="input5" placeholder="Password">
+                <input class="modal-form__input" type="text" id="input6" placeholder="repeat password">
+            </div>
+            <div class="form-reg__box">
+                <label class="modal-form__label">
+                    i agree ti data processing
+                    <input class="modal-form__input-checkbox" type="checkbox">
+                    <span class="modal-form__checkbox"></span>
+                </label>
+            </div>
+            <div class="reg-log">
+                <a class="active">Registration</a> / <a class="login-link" data-fancybox
+                    data-src="#modal-login">Login</a>
+            </div>
+            <button class="modal-form__btn">GO</button>
+        </form>
+    </div>
+    <div class="modal-content" id="modal-forgotPass">
+        <button class="closeModal-btn"></button>
+        <h2 class="modal-content__title">Password <br> recovery</h2>
+        <form class="modal-form form-forgotPass">
+            <input class="modal-form__input" type="email" id="input1" placeholder="Your mail">
+            <p class="form-forgotPass__text">We will send further instructions to your email to reset your password.</p>
+            <button class="modal-form__btn" data-fancybox data-src="#modal-mail">Send</button>
+        </form>
+    </div>
+    <div class="modal-home" id="modal-mail">
+        <p>Check your mail</p>
+        <a href="./index.html">to Home Page</a>
+    </div>
+
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+
+    <script>
+        Fancybox.bind("[data-fancybox]", {
+            closeButton: false,
+            dragToClose: false,
+            closeExisting: true,
+            on: {
+                done: (fancybox) => {
+                    // Добавляем обработчик для нашей кнопки закрытия
+                    document.querySelectorAll('.closeModal-btn').forEach(e => {
+                        e.addEventListener('click', function () {
+                            Fancybox.close(); // Закрытие модального окна
+                        });
+                    });
+                }
+            }
+        });
+    </script>
+
     <script>
         var swiper = new Swiper(".mySwiper", {
             centeredSlides: true,

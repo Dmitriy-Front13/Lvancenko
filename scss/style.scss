@@ -25,6 +25,15 @@
         // text-shadow: -1px 1px 2px #eb09ff;
     }
 
+    &__title-page {
+        font-size: 40px;
+        font-weight: 400;
+        text-align: center;
+        color: #EB09FF;
+        text-transform: uppercase;
+
+    }
+
     &__title-img {
         margin: 0 27px;
     }
@@ -293,51 +302,6 @@
     }
 }
 
-.number-pagination {
-    display: flex;
-    align-items: center;
-    gap: 4px;
-    height: 28px;
-    margin: 0 auto;
-
-    span {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border: 1px solid #EB09FF;
-        border-radius: 2px;
-        width: 21px;
-        height: 21px;
-        color: #EB09FF;
-        font-size: 13px;
-        cursor: pointer;
-
-        &:hover {
-            transform: scale(1.2);
-            box-shadow: 0px 0px 10.2px 1px #EB09FF;
-
-        }
-    }
-    .check {
-        background: #FF543E;
-        border: none;
-        color: #000000;
-    }
-    
-    .active {
-        transform: scale(1.2);
-        box-shadow: 0px 0px 10.2px 1px #EB09FF;
-    }
-}
-
-
-
-
-.wrapper-rules {
-    background-image: url('img/rulespng.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 
 
 .rulesimg {
