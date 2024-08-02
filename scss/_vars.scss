@@ -65,7 +65,6 @@
   box-shadow: 0px 0px 75.3px 7px #EB09FF;
   border-radius: 11px;
   font-family: 'Wallpoet';
-  font-style: normal;
   font-weight: 400;
   font-size: 32px;
   line-height: 32px;
@@ -73,7 +72,7 @@
   text-transform: uppercase;
   border: 1px solid #EB00FF;
   color: rgba(0, 0, 0, 0.5);
-  text-shadow: 2px 0 #EB09FF, -2px 0 #EB09FF, 0 2px #EB09FF, 0 -2px #EB09FF, 1px 1px #EB09FF, -1px -1px #EB09FF, 1px -1px #EB09FF, -1px 1px #EB09FF;
+  text-shadow: -1px -1px #EB00FF, 1px -1px #EB00FF, -1px 1px #EB00FF, 1px 1px #EB00FF;
   cursor: pointer;
 }
 

@@ -1,0 +1,55 @@
+html,
+body {
+    height: 100%;
+}
+
+
+.main {
+    flex-grow: 1;
+  }
+
+body {
+    background-color: #000;
+    font-family: "Wallpoet", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.container {
+    width: auto;
+    margin: 0 auto;
+    padding: 0 50px;
+}
+
+.wrapper-about {
+    width: 100%;
+    background-image: url('img/aboutimg.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+}
+
+
+.special-class-653 {
+    background: #09FF22 !important;
+}
+
+.special-class-326 {
+    background: #FF543E !important;
+    color: #000 !important;
+}
+
+.no {
+    background: #FF543E !important;
+    border: none !important;
+}
+
+.yes {
+    background: #09FF22 !important;
+
+    border: none !important;
+}
